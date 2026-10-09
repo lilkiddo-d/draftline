@@ -1,0 +1,12 @@
+{
+  "name": "draftline",
+  "private": true,
+  "packageManager": "pnpm@12.9.1",
+  "scripts": {
+    "build:contracts": "cd contracts && forge build",
+    "test:contracts": "cd contracts && forge test",
+    "build:app": "pnpm --filter @draftline/app build",
+    "dev:app": "pnpm --filter @draftline/app dev",
+    "keeper": "pnpm --filter @draftline/keeper start"
+  }
+}

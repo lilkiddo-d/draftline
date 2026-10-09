@@ -1,0 +1,14 @@
+{
+  "name": "@draftline/keeper",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "start": "node keeper.mjs",
+    "once": "node keeper.mjs --once",
+    "local-chain": "node local-chain.mjs"
+  },
+  "dependencies": {
+    "viem": "^2.57.0"
+  }
+}

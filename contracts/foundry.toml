@@ -1,0 +1,39 @@
+[profile.default]
+src = "src"
+out = "out"
+test = "test"
+script = "script"
+libs = ["lib", "node_modules"]
+solc_version = "0.8.24"
+evm_version = "cancun"
+optimizer = true
+optimizer_runs = 10
+bytecode_hash = "none"
+cbor_metadata = false
+fs_permissions = [
+  { access = "read-write", path = "../deployments" },
+  { access = "read-write", path = "../app/src/generated" },
+  { access = "read", path = "./" },
+]
+
+[fuzz]
+runs = 512
+seed = "0xd4af7"
+
+[invariant]
+runs = 128
+depth = 64
+fail_on_revert = false
+
+[profile.ci.fuzz]
+runs = 5000
+
+[rpc_endpoints]
+robinhood = "https://rpc.mainnet.chain.robinhood.com"
+local = "http://127.0.0.1:8546"
+
+[fmt]
+line_length = 120
+
+[lint]
+lint_on_build = false

@@ -1,0 +1,7 @@
+{
+  "name": "@draftline/config",
+  "private": true,
+  "version": "1.0.0",
+  "main": "chains.ts",
+  "types": "chains.ts"
+}
