@@ -16,3 +16,4 @@ contracts/broadcast/*/4663/dry-run/
 slither-raw.txt
 .claude/
 *.tsbuildinfo
+*.recovery.lock
